@@ -28,4 +28,15 @@
     bibata-cursors
     (texliveBasic.withPackages (ps: with ps;[latexmk]))
   ];
+
+  programs.git = {
+  enable = true;
+  settings = {
+    user = {
+      name = "Akshit-Anand-008";
+      email = "akshitanand008@gmail.com";
+    };
+    init.defaultBranch = "main";
+  };
+};
 }
