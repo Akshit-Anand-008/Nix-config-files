@@ -1,13 +1,14 @@
-{config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
+  imports = [ inputs.noctalia.homeModules.default ];
   home.username = "akshit";
   home.homeDirectory = "/home/akshit";
   home.stateVersion =  "26.05";
-
   home.packages = with pkgs; [
     alacritty niri
-    quickshell noctalia-shell
+    quickshell
+    #noctalia-shell
     neovim tree-sitter
     lua-language-server clang-tools
     bat tealdeer eza
@@ -27,4 +28,6 @@
     bibata-cursors
     (texliveBasic.withPackages (ps: with ps;[latexmk]))
   ];
+
+  programs.noctalia-shell.enable = true;
 }
