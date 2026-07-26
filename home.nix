@@ -14,8 +14,7 @@
     thunderbird
     zsh zsh-vi-mode starship
     taskwarrior3 btop
-    tmux
-    stow
+    tmux stow
     zathura mpv
     nodejs
     vim git bc
@@ -28,15 +27,4 @@
     bibata-cursors
     (texliveBasic.withPackages (ps: with ps;[latexmk]))
   ];
-
-  programs.git = {
-  enable = true;
-  settings = {
-    user = {
-      name = "Akshit-Anand-008";
-      email = "akshitanand008@gmail.com";
-    };
-    init.defaultBranch = "main";
-  };
-};
 }
