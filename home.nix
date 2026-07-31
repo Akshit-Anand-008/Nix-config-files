@@ -8,16 +8,15 @@
   home.packages = with pkgs; [
     alacritty niri
     quickshell
-    #noctalia-shell
     neovim tree-sitter
-    lua-language-server clang-tools
+    lua-language-server clang-tools nil
     bat tealdeer eza
     thunderbird
     zsh zsh-vi-mode starship
     taskwarrior3 btop
     tmux stow
     zathura mpv
-    nodejs
+    nodejs python3
     vim git bc
     wget jq curl
     fzf fd ripgrep file

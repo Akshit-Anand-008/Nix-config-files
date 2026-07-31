@@ -1,15 +1,17 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    /etc/nixos/hardware-configuration.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   security.rtkit.enable = true;
 
   networking.hostName = "nixos";
@@ -68,13 +70,17 @@
   users.users."akshit" = {
     isNormalUser = true;
     description = "Akshit_Anand";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     shell = pkgs.zsh;
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
   };
 
   environment.systemPackages = with pkgs; [
-    vim git
+    vim
+    git
   ];
   fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 
