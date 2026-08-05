@@ -86,7 +86,6 @@
 
   programs = {
     firefox.enable = true;
-    # obs-studio.enable = true;
     niri.enable = true;
     zsh = {
       enable = true;
