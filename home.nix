@@ -11,7 +11,7 @@
     neovim tree-sitter
     lua-language-server clang-tools nil
     bat tealdeer eza
-    thunderbird gimp
+    thunderbird
     zsh zsh-vi-mode starship
     taskwarrior3 btop
     tmux stow
