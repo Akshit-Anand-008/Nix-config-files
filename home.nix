@@ -7,18 +7,16 @@
   home.stateVersion =  "26.05";
   home.packages = with pkgs; [
     alacritty niri
-    quickshell
     neovim tree-sitter
     lua-language-server clang-tools nil
     bat tealdeer eza
-    thunderbird gimp libreoffice
+    thunderbird libreoffice pdfarranger
     zsh zsh-vi-mode starship
     taskwarrior3 btop
-    tmux stow
+    tmux stow fuzzel libnotify
     zathura mpv
     nodejs python3
-    vim git bc
-    wget jq curl
+    bc jq curl
     fzf fd ripgrep file
     gnumake cmake gcc gdb stdenv.cc
     gzip zip unzip
@@ -26,6 +24,7 @@
     playerctl brightnessctl
     bibata-cursors
     (texliveBasic.withPackages (ps: with ps;[latexmk]))
+    iverilog
   ];
 
   programs.noctalia-shell.enable = true;

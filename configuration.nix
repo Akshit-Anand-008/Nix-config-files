@@ -79,8 +79,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    vim
-    git
+    vim git wget
   ];
   fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 
