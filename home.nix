@@ -10,7 +10,8 @@
     neovim tree-sitter
     lua-language-server clang-tools nil
     bat tealdeer eza
-    thunderbird libreoffice pdfarranger
+    thunderbird libreoffice
+    pdftricks inkscape
     zsh zsh-vi-mode starship
     taskwarrior3 btop
     tmux stow fuzzel libnotify
@@ -20,7 +21,7 @@
     fzf fd ripgrep file
     gnumake cmake gcc gdb stdenv.cc
     gzip zip unzip
-    xwayland-satellite wayland-utils wev
+    xwayland-satellite wayland-utils wev wl-clipboard
     playerctl brightnessctl
     bibata-cursors
     (texliveBasic.withPackages (ps: with ps;[latexmk]))
