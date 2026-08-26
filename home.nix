@@ -25,6 +25,7 @@
     playerctl brightnessctl
     bibata-cursors
     (texliveBasic.withPackages (ps: with ps;[latexmk]))
+    (nnn.override { withNerdIcons = true; })
     iverilog
   ];
 
