@@ -19,7 +19,8 @@
     nodejs python3
     bc jq curl
     fzf fd ripgrep file
-    gnumake cmake gcc gdb stdenv.cc
+    gcc stdenv.cc
+    gnumake cmake gdb
     gzip zip unzip
     xwayland-satellite wayland-utils wev wl-clipboard
     playerctl brightnessctl
