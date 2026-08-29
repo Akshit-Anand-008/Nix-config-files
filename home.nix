@@ -6,28 +6,46 @@
   home.homeDirectory = "/home/akshit";
   home.stateVersion =  "26.05";
   home.packages = with pkgs; [
-    alacritty niri
-    neovim tree-sitter
-    lua-language-server clang-tools nil
-    bat tealdeer eza
-    thunderbird libreoffice
-    pdftricks inkscape
-    zsh zsh-vi-mode starship
-    taskwarrior3 btop
-    tmux stow fuzzel libnotify
-    zathura mpv
-    nodejs python3
-    bc jq curl
-    fzf fd ripgrep file
-    gcc stdenv.cc
-    gnumake cmake gdb
-    gzip zip unzip
-    xwayland-satellite wayland-utils wev wl-clipboard
-    playerctl brightnessctl
+    # Neovim
+    neovim
+    nil clang-tools lua-language-server
+    tree-sitter
+
+    # Shell
+    alacritty
+    starship
+    zsh
+    zsh-vi-mode
+
+    # Desktop
+    niri
+    fuzzel
+    brightnessctl playerctl libnotify
+    wayland-utils wev wl-clipboard xwayland-satellite
     bibata-cursors
-    (texliveBasic.withPackages (ps: with ps;[latexmk]))
-    (nnn.override { withNerdIcons = true; })
+
+    # Development
+    gcc gdb
+    python3
     iverilog
+
+    # --- CLI Utilities & Tools ---
+    (nnn.override { withNerdIcons = true; })
+    bc eza bat tealdeer
+    fd fzf file ripgrep
+    unzip zip gzip
+    jq curl stow
+    taskwarrior3 btop tmux
+    cmake gnumake
+
+    # Office and Media
+    (texliveBasic.withPackages (ps: with ps; [ latexmk ]))
+    inkscape
+    libreoffice
+    mpv
+    pdftricks
+    thunderbird
+    zathura
   ];
 
   programs.noctalia-shell.enable = true;
