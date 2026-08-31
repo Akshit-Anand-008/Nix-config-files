@@ -29,7 +29,7 @@
     python3
     iverilog
 
-    # --- CLI Utilities & Tools ---
+    # CLI Utilities
     (nnn.override { withNerdIcons = true; })
     bc eza bat tealdeer
     fd fzf file ripgrep
@@ -40,12 +40,9 @@
 
     # Office and Media
     (texliveBasic.withPackages (ps: with ps; [ latexmk ]))
-    inkscape
-    libreoffice
+    libreoffice pdfarranger
+    zathura kdePackages.okular
     mpv
-    pdftricks
-    thunderbird
-    zathura
   ];
 
   programs.noctalia-shell.enable = true;
