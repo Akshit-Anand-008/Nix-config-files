@@ -38,10 +38,10 @@
     taskwarrior3 btop tmux
     cmake gnumake
 
-    # Office and Media
+    # Others
     (texliveBasic.withPackages (ps: with ps; [ latexmk ]))
-    libreoffice pdfarranger
-    zathura kdePackages.okular
+    # libreoffice
+    pdfarranger zathura kdePackages.okular
     mpv
   ];
 
