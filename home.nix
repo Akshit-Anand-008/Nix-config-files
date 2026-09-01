@@ -12,10 +12,9 @@
     tree-sitter
 
     # Shell
-    alacritty
-    starship
+    alacritty foot
     zsh
-    zsh-vi-mode
+    starship zsh-vi-mode
 
     # Desktop
     niri
@@ -33,8 +32,8 @@
     (nnn.override { withNerdIcons = true; })
     bc eza bat tealdeer
     fd fzf file ripgrep
-    unzip zip gzip
-    jq curl stow
+    unzip zip
+    gzip jq curl stow
     taskwarrior3 btop tmux
     cmake gnumake
 
