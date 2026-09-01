@@ -40,8 +40,9 @@
 
     # Others
     (texliveBasic.withPackages (ps: with ps; [ latexmk ]))
-    # libreoffice
-    pdfarranger zathura kdePackages.okular
+    pdfarranger
+    zathura
+    kdePackages.okular
     mpv
   ];
 
