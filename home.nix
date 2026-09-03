@@ -12,9 +12,10 @@
     tree-sitter
 
     # Shell
-    alacritty foot
+    alacritty
     zsh
-    starship zsh-vi-mode
+    zsh-vi-mode
+    starship
 
     # Desktop
     niri
@@ -31,18 +32,19 @@
     # CLI Utilities
     (nnn.override { withNerdIcons = true; })
     bc eza bat tealdeer
-    fd fzf file ripgrep
-    unzip zip
-    gzip jq curl stow
-    taskwarrior3 btop tmux
+    fd file ripgrep
+    unzip zip gzip
+    jq curl 
     cmake gnumake
+    stow fzf tmux
+    taskwarrior3 btop
 
     # Others
-    (texliveBasic.withPackages (ps: with ps; [ latexmk ]))
-    pdfarranger
-    zathura
-    kdePackages.okular
+    thunderbird
     mpv
+    (texliveBasic.withPackages (ps: with ps; [ latexmk ]))
+    libreoffice pdfarranger
+    zathura kdePackages.okular
   ];
 
   programs.noctalia-shell.enable = true;
