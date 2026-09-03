@@ -28,6 +28,7 @@
     gcc gdb
     python3
     iverilog
+    nasm
 
     # CLI Utilities
     (nnn.override { withNerdIcons = true; })
