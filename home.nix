@@ -35,7 +35,7 @@
     bc eza bat tealdeer
     fd file ripgrep
     unzip zip gzip
-    jq curl 
+    jq curl
     cmake gnumake
     stow fzf tmux
     taskwarrior3 btop
