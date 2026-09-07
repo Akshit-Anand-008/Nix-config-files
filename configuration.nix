@@ -79,7 +79,6 @@
 
   environment.systemPackages = with pkgs; [
     vim git wget
-    home-manager
   ];
 
   programs = {

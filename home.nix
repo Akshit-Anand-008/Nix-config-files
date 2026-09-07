@@ -11,17 +11,12 @@
     nil clang-tools lua-language-server
     tree-sitter
 
-    # Shell
-    nerd-fonts.jetbrains-mono
-    alacritty
-    starship
-
     # Desktop
     niri
+    alacritty
     fuzzel
     brightnessctl playerctl libnotify
     wayland-utils wev wl-clipboard xwayland-satellite
-    bibata-cursors
 
     # Development
     gcc gdb
@@ -38,6 +33,11 @@
     cmake gnumake
     stow fzf tmux
     taskwarrior3 btop
+
+    # Aesthetics
+    bibata-cursors
+    nerd-fonts.jetbrains-mono
+    starship
 
     # Others
     thunderbird
