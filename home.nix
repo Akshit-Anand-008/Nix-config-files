@@ -48,5 +48,12 @@
     zathura kdePackages.okular
   ];
 
-  programs.noctalia-shell.enable = true;
+  programs = {
+    noctalia-shell.enable = true;
+    home-manager.enable = true;
+    zsh = {
+      enable = true;
+      interactiveshellinit = "source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
+    };
+  };
 }
