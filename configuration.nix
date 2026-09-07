@@ -74,16 +74,8 @@
       "networkmanager"
       "wheel"
     ];
-    packages = with pkgs; [ ];
     shell = pkgs.zsh;
-    programs = {
-      firefox.enable = true;
-      niri.enable = true;
-      zsh = {
-      enable = true;
-      interactiveShellInit = "source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
-      };
-    };
+    packages = with pkgs; [ ];
   };
 
   environment.systemPackages = with pkgs; [
@@ -92,6 +84,14 @@
   ];
   fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 
+  programs = {
+    firefox.enable = true;
+    niri.enable = true;
+    zsh = {
+      enable = true;
+      interactiveShellInit = "source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
+    };
+  };
 
   system.stateVersion = "26.05";
 }
