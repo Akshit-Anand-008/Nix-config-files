@@ -4,7 +4,7 @@
   imports = [ inputs.noctalia.homeModules.default ];
   home.username = "akshit";
   home.homeDirectory = "/home/akshit";
-  home.stateVersion =  "26.05";
+  home.stateVersion = "26.05";
   home.packages = with pkgs; [
     # Neovim
     neovim
@@ -51,9 +51,5 @@
   programs = {
     noctalia-shell.enable = true;
     home-manager.enable = true;
-    zsh = {
-      enable = true;
-      interactiveshellinit = "source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
-    };
   };
 }
