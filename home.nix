@@ -13,6 +13,7 @@
 
     # Shell
     alacritty
+    nerd-fonts.jetbrains-mono
     zsh
     zsh-vi-mode
     starship
@@ -51,5 +52,11 @@
   programs = {
     noctalia-shell.enable = true;
     home-manager.enable = true;
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      syntaxHighlighting.enable = true;
+      initContent = "source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
+    };
   };
 }
