@@ -70,11 +70,11 @@
   users.users."akshit" = {
     isNormalUser = true;
     description = "Akshit_Anand";
+    shell = pkgs.zsh;
     extraGroups = [
       "networkmanager"
       "wheel"
     ];
-    shell = pkgs.zsh;
   };
 
   environment.systemPackages = with pkgs; [
@@ -85,7 +85,12 @@
   programs = {
     firefox.enable = true;
     niri.enable = true;
-    zsh.enable = true;
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      syntaxHighlighting.enable = true;
+      interactiveShellInit = "source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh";
+    };
   };
 
   system.stateVersion = "26.05";
