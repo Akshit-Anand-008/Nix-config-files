@@ -12,7 +12,6 @@
     tree-sitter
 
     # Desktop
-    niri
     alacritty
     fuzzel
     brightnessctl playerctl libnotify
