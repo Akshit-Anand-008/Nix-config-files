@@ -24,6 +24,7 @@
     nasm
 
     # CLI Utilities
+    lsd
     (nnn.override { withNerdIcons = true; })
     bc eza bat tealdeer
     fd file ripgrep
@@ -46,8 +47,5 @@
     zathura kdePackages.okular
   ];
 
-  programs = {
-    noctalia-shell.enable = true;
-    home-manager.enable = true;
-  };
+  programs.noctalia-shell.enable = true;
 }
