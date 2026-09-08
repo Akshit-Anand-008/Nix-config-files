@@ -24,9 +24,8 @@
     nasm
 
     # CLI Utilities
-    lsd
     (nnn.override { withNerdIcons = true; })
-    bc eza bat tealdeer
+    bc lsd bat tealdeer
     fd file ripgrep
     unzip zip gzip
     jq curl
